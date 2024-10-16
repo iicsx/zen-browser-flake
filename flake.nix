@@ -8,7 +8,7 @@
   outputs = { self, nixpkgs }:
     let
       system = "x86_64-linux";
-      version = "1.0.1-a.8";
+      version = "1.0.1-a.10";
       downloadUrl = {
         "specific" = {
 	  url = "https://github.com/zen-browser/desktop/releases/download/${version}/zen.linux-specific.tar.bz2";
@@ -40,7 +40,7 @@
 	  downloadData = downloadUrl."${variant}";
 	in
              pkgs.stdenv.mkDerivation {
-    inherit version;
+    		inherit version;
 		pname = "zen-browser";
 
 		src = builtins.fetchTarball {
@@ -76,7 +76,7 @@
 		  wrapProgram $out/bin/vaapitest --set LD_LIBRARY_PATH "${pkgs.lib.makeLibraryPath runtimeLibs}"
 		'';
 
-    meta.mainProgram = "zen";
+    		meta.mainProgram = "zen";
 	      };
     in
     {
