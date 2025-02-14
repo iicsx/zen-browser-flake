@@ -9,7 +9,7 @@
     let
       system = "x86_64-linux";
       base = "linux-x86_64";
-      version = "1.7.4b";
+      version = "1.7.6b";
       downloadUrl = {
         "specific" = {
 	  url = "https://github.com/zen-browser/desktop/releases/download/${version}/zen.${base}.tar.bz2";
