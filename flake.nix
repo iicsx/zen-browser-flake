@@ -9,15 +9,15 @@
     let
       system = "x86_64-linux";
       base = "linux-x86_64";
-      version = "1.7.6b";
+      version = "twilight";
       downloadUrl = {
         "specific" = {
 	  url = "https://github.com/zen-browser/desktop/releases/download/${version}/zen.${base}.tar.xz";
-	  sha256 = "sha256:19v6n0a1j63i8i7c9615lh1fmbz8jakwyiy11imc9vbq1n6z0nm9";
+	  sha256 = "sha256:1awd9iwg7mrkz18wlnb83pay6i7jx6g0qlqvdiqidzm32bc38ynd";
 	};
 	"generic" = {
 	  url = "https://github.com/zen-browser/desktop/releases/download/${version}/zen.linux-generic.tar.xz";
-	  sha256 = "sha256:19v6n0a1j63i8i7c9615lh1fmbz8jakwyiy11imc9vbq1n6z0nm9";
+	  sha256 = "sha256:1awd9iwg7mrkz18wlnb83pay6i7jx6g0qlqvdiqidzm32bc38ynd";
 	};
       };
 
